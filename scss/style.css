@@ -23,6 +23,12 @@ body {
   line-height: 1.6;
 }
 
+#policy-acceptance-box,
+[ficus-fade-up],
+.arrow__animation {
+  visibility: hidden;
+}
+
 /* ------- TITLES, TEXTS -------- */
 .text-regular {
   font-weight: 400;

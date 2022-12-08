@@ -97,3 +97,28 @@ function initArrowFadeIn() {
 
 initArrowFadeIn()
 
+
+
+
+function initPolicyAcceptance() {
+	const animatePolicyAcceptance = gsap.from("#policy-acceptance-box", {
+		yPercent: 100,
+		duration: 1,
+		autoAlpha: 0,
+		paused: true,
+	})
+	
+	setTimeout(() => {
+		const isCookieNoticeAccepted = localStorage.getItem("cookieNoticeAccepted") === 'true'
+		if (!isCookieNoticeAccepted) {
+			animatePolicyAcceptance.play()
+		}
+	}, 3000)
+
+	document.getElementById("policy-acceptance-button").addEventListener("click", function() {
+		animatePolicyAcceptance.reverse()
+		localStorage.setItem("cookieNoticeAccepted", true)
+	})
+}
+
+initPolicyAcceptance()
