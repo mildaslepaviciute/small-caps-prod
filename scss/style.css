@@ -23,12 +23,6 @@ body {
   line-height: 1.6;
 }
 
-#policy-acceptance-box,
-[ficus-fade-up],
-.arrow__animation {
-  visibility: hidden;
-}
-
 /* ------- TITLES, TEXTS -------- */
 .text-regular {
   font-weight: 400;
@@ -193,6 +187,10 @@ button:focus {
   overflow: hidden;
 }
 
+.gallery-img {
+  width: 200px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -331,6 +329,9 @@ a:hover {
     padding-top: 90px;
     padding-bottom: 90px;
   }
+  .gallery-img {
+    width: 320px;
+  }
   html, body {
     font-size: 19px;
   }
@@ -350,6 +351,9 @@ a:hover {
   }
   small {
     font-size: 0.8rem !important;
+  }
+  .gallery-img {
+    width: 420px;
   }
   html, body {
     font-size: 23px;
