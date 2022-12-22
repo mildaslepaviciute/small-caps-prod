@@ -69,16 +69,20 @@
 
                 <header class="overflow-hidden">
                     <div class="h-100 d-flex flex-column align-items-center justify-content-center position-relative">
-                        <video id="hero-video" src="video/Mazos-kaledos.mp4" class="fit-cover d-none d-md-flex" style="min-width: 100%!important; min-height: 100%!important;" autoplay loop muted playsinline></video>
-                        <video id="hero-video" src="video/Mazos-kaledos-Allcaps1080x1620.mp4" class="fit-cover d-none d-sm-block d-md-none" style="min-width: 100%!important; min-height: 100%!important;" autoplay loop muted playsinline></video>
-                        <video id="hero-video" src="video/Mazos-kaledos-Allcaps1080x1920.mp4" class="fit-cover d-sm-none" style="min-width: 100%!important; min-height: 100%!important;" autoplay loop muted playsinline></video>
+                        <video id="hero-video-mobile" src="video/Mazos-kaledos.mp4" class="fit-cover d-none d-md-flex" style="min-width: 100%!important; min-height: 100%!important;" autoplay loop muted playsinline></video>
+                        <video id="hero-video-tablet" src="video/Mazos-kaledos-Allcaps1080x1620.mp4" class="fit-cover d-none d-sm-block d-md-none" style="min-width: 100%!important; min-height: 100%!important;" autoplay loop muted playsinline></video>
+                        <video id="hero-video-desktop" src="video/Mazos-kaledos-Allcaps1080x1920.mp4" class="fit-cover d-sm-none" style="min-width: 100%!important; min-height: 100%!important;" autoplay loop muted playsinline></video>
                         <div class="position-absolute bottom-0 w-100 mb-4">
                             <div class="container-fluid">
                                 <div class="d-flex justify-content-between">
                                     <img src="img/illustrations/arrow-white.svg" alt="" class="arrow-move">
-                                    <div id="sound-toggler" class="d-flex align-items-center text-white line-h-1 pointer">
-                                        <img src="img/illustrations/sound.svg" alt="" class="sound-icon me-3">
-                                        <small>Įjunkite<br>garsą</small>
+                                    <div id="sound-toggler-on" class="d-flex align-items-center text-white line-h-1 pointer">
+                                        <img src="img/illustrations/mute.png" alt="" class="sound-icon me-3">
+                                        <small>Įjungti<br>garsą</small>
+                                    </div>
+                                    <div id="sound-toggler-off" class="d-none d-flex align-items-center text-white line-h-1 pointer">
+                                        <img src="img/illustrations/volume.png" alt="" class="sound-icon me-3">
+                                        <small>Išjungti<br>garsą</small>
                                     </div>
                                 </div>
                             </div>

@@ -36,17 +36,39 @@ initMarquee()
 
 
 
-function initSoundToggler() {
-	const video = document.getElementById("hero-video")
-	const soundToggler = document.getElementById("sound-toggler")
+// function initSoundToggler() {
+// 	const video = document.getElementById("hero-video")
+// 	const soundToggler = document.getElementById("sound-toggler")
 
-  soundToggler.addEventListener("click", function() {
+//   soundToggler.addEventListener("click", function() {
+//     video.muted = false
+//     soundToggler.classList.add('d-none')
+//   })
+// }
+
+// initSoundToggler()
+
+function initSoundToggler(videoId) {
+	const video = document.getElementById(videoId)
+	const soundTogglerOn = document.getElementById("sound-toggler-on")
+  const soundTogglerOff = document.getElementById("sound-toggler-off")
+
+  soundTogglerOn.addEventListener("click", function() {
     video.muted = false
-    soundToggler.classList.add('d-none')
+    soundTogglerOn.classList.add('d-none')
+    soundTogglerOff.classList.remove('d-none')
+  })
+  soundTogglerOff.addEventListener("click", function() {
+    video.muted = true
+    soundTogglerOn.classList.remove('d-none')
+    soundTogglerOff.classList.add('d-none')
   })
 }
 
-initSoundToggler()
+initSoundToggler("hero-video-mobile")
+initSoundToggler("hero-video-tablet")
+initSoundToggler("hero-video-desktop")
+
 
 
 function initFicusFadeUp() {
